@@ -10,7 +10,6 @@ fs.readdirSync(__dirname).forEach(file => {
 // Try to find server directory
 const serverPath = path.join(__dirname, 'server');
 console.log('Server directory exists:', fs.existsSync(serverPath));
-
 if (fs.existsSync(serverPath)) {
   console.log('Server directory contents:');
   fs.readdirSync(serverPath).forEach(file => {
